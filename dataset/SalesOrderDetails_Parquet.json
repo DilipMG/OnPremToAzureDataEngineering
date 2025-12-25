@@ -1,0 +1,19 @@
+{
+	"name": "SalesOrderDetails_Parquet",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ADLS2_ls",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "bronze"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
