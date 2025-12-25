@@ -1,0 +1,27 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "onprem-to-azure-dmg-df"
+		},
+		"ADLS2_ls_accountKey": {
+			"value": ""
+		},
+		"ADLS2_ls_properties_typeProperties_url": {
+			"value": "https://onpremtoazureadls2.dfs.core.windows.net/"
+		},
+		"AzureKeyVault1_properties_typeProperties_baseUrl": {
+			"value": "https://omprem-to-azure-dmg-kv.vault.azure.net/"
+		},
+		"onepremsqlserver_ls_properties_typeProperties_server": {
+			"value": "VRUDDHI"
+		},
+		"onepremsqlserver_ls_properties_typeProperties_database": {
+			"value": "AdventureWorks2017"
+		},
+		"onepremsqlserver_ls_properties_typeProperties_userName": {
+			"value": "dilip"
+		}
+	}
+}
