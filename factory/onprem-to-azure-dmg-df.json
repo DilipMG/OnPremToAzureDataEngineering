@@ -1,0 +1,9 @@
+{
+	"name": "onprem-to-azure-dmg-df",
+	"location": "southindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "06a58e3a-b8a4-415c-a30e-e6b941a310e0",
+		"tenantId": "d9d0f6e4-0901-4219-9f97-3ee11391ccbc"
+	}
+}
