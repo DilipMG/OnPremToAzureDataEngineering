@@ -1,0 +1,12 @@
+{
+	"name": "SqlServerAllTables",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "onepremsqlserver_ls",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": []
+	}
+}
