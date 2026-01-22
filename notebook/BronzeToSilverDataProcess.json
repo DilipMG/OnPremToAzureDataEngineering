@@ -17,7 +17,7 @@
 				"spark.dynamicAllocation.enabled": "false",
 				"spark.dynamicAllocation.minExecutors": "2",
 				"spark.dynamicAllocation.maxExecutors": "2",
-				"spark.autotune.trackingId": "e0325532-09e8-4970-87be-c1460212edba"
+				"spark.autotune.trackingId": "99c4b463-7c59-41ec-a1ca-abf76e316b00"
 			}
 		},
 		"metadata": {
@@ -61,7 +61,7 @@
 					"\n",
 					"# Define paths\n",
 					"base_path = \"abfss://ctstech@ctstechadls2.dfs.core.windows.net/bronze/ctstech/\"\n",
-					"output_base_path = \"abfss:/ctstech@ctstechadls2.dfs.core.windows.net/silver/ctstech/\"\n",
+					"output_base_path = \"abfss://ctstech@ctstechadls2.dfs.core.windows.net/silver/ctstech/\"\n",
 					"\n",
 					"# Enable Delta Lake optimizations\n",
 					"spark.conf.set(\"spark.databricks.delta.schema.autoMerge.enabled\", \"true\")\n",
@@ -334,7 +334,7 @@
 					"    raise\n",
 					""
 				],
-				"execution_count": 1
+				"execution_count": 5
 			}
 		]
 	}
