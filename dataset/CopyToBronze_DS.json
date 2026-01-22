@@ -23,7 +23,7 @@
 					"type": "Expression"
 				},
 				"folderPath": {
-					"value": "@concat(dataset().SchemaName,'/',dataset().TableName,'/')",
+					"value": "@concat('bronze/',dataset().SchemaName,'/',dataset().TableName,'/')",
 					"type": "Expression"
 				},
 				"fileSystem": "ctstech"
