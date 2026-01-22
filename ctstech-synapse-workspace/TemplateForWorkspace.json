@@ -306,7 +306,7 @@
 						}
 					},
 					{
-						"name": "ForEachTablesFromLoopUp",
+						"name": "ForEachTablesFromOuterLoopup",
 						"type": "ForEach",
 						"dependsOn": [
 							{
