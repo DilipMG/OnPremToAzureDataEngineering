@@ -17,7 +17,7 @@
 				"spark.dynamicAllocation.enabled": "false",
 				"spark.dynamicAllocation.minExecutors": "2",
 				"spark.dynamicAllocation.maxExecutors": "2",
-				"spark.autotune.trackingId": "9f705101-755c-454d-92cc-8264cc73cc88"
+				"spark.autotune.trackingId": "e0325532-09e8-4970-87be-c1460212edba"
 			}
 		},
 		"metadata": {
@@ -60,8 +60,8 @@
 					"logger = logging.getLogger(__name__)\n",
 					"\n",
 					"# Define paths\n",
-					"base_path = \"abfss://fintech@ctstechadls2.dfs.core.windows.net/bronze/ctstech/\"\n",
-					"output_base_path = \"abfss://fintech@ctstechadls2.dfs.core.windows.net/silver/ctstech/\"\n",
+					"base_path = \"abfss://ctstech@ctstechadls2.dfs.core.windows.net/bronze/ctstech/\"\n",
+					"output_base_path = \"abfss:/ctstech@ctstechadls2.dfs.core.windows.net/silver/ctstech/\"\n",
 					"\n",
 					"# Enable Delta Lake optimizations\n",
 					"spark.conf.set(\"spark.databricks.delta.schema.autoMerge.enabled\", \"true\")\n",
