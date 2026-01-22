@@ -3,6 +3,10 @@
 	"properties": {
 		"nbformat": 4,
 		"nbformat_minor": 2,
+		"bigDataPool": {
+			"referenceName": "ctstechspool",
+			"type": "BigDataPoolReference"
+		},
 		"sessionProperties": {
 			"driverMemory": "28g",
 			"driverCores": 4,
@@ -13,7 +17,7 @@
 				"spark.dynamicAllocation.enabled": "false",
 				"spark.dynamicAllocation.minExecutors": "2",
 				"spark.dynamicAllocation.maxExecutors": "2",
-				"spark.autotune.trackingId": "e3d7ed21-6487-4d42-a544-400a3f3a9646"
+				"spark.autotune.trackingId": "c0cf323e-5b39-4bb8-910f-019c42c9331d"
 			}
 		},
 		"metadata": {
@@ -21,10 +25,25 @@
 			"enableDebugMode": false,
 			"kernelspec": {
 				"name": "synapse_pyspark",
-				"display_name": "python"
+				"display_name": "Synapse PySpark"
 			},
 			"language_info": {
 				"name": "python"
+			},
+			"a365ComputeOptions": {
+				"id": "/subscriptions/bda113de-2245-4cb8-80fe-42f3df7233c1/resourceGroups/CTSTech/providers/Microsoft.Synapse/workspaces/ctstech-synapse-workspace/bigDataPools/ctstechspool",
+				"name": "ctstechspool",
+				"type": "Spark",
+				"endpoint": "https://ctstech-synapse-workspace.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/ctstechspool",
+				"auth": {
+					"type": "AAD",
+					"authResource": "https://dev.azuresynapse.net"
+				},
+				"sparkVersion": "3.5",
+				"nodeCount": 3,
+				"cores": 4,
+				"memory": 28,
+				"automaticScaleJobs": false
 			},
 			"sessionKeepAliveTimeout": 30
 		},
@@ -41,8 +60,8 @@
 					"logger = logging.getLogger(__name__)\n",
 					"\n",
 					"# Define paths\n",
-					"silver_base_path = \"abfss://fintech@airbnbdatagds.dfs.core.windows.net/silver/fintech/\"\n",
-					"output_base_path = \"abfss://fintech@airbnbdatagds.dfs.core.windows.net/gold/fintech/\"\n",
+					"silver_base_path = \"abfss://ctstech@ctstechadls2.dfs.core.windows.net/silver/ctstech/\"\n",
+					"output_base_path = \"abfss://ctstech@ctstechadls2.dfs.core.windows.net/gold/ctstech/\"\n",
 					"\n",
 					"# Enable Delta Lake optimizations\n",
 					"spark.conf.set(\"spark.databricks.delta.schema.autoMerge.enabled\", \"true\")\n",
