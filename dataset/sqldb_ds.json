@@ -1,0 +1,13 @@
+{
+	"name": "sqldb_ds",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "source_sqldb_ls",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": []
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}
